@@ -22,9 +22,9 @@ void main(void)
 		printf("Please enter N & K:");
 		scanf("%d%d",&N,&K);//Ask the user to enter the number of array's e'ements and number or splits
 		/*If number of splits more than size of array ask user again*/
-		while(K>N)
+		while(K>N || K<1)
 		{
-			printf("K should be < or = N\n");
+			printf("K should be < or = N and more than 1\n");
 			printf("Please enter N & K:");
 			scanf("%d%d",&N,&K);
 		}
